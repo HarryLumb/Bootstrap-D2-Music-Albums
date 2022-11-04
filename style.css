@@ -13,7 +13,10 @@ html{
 }
 h1{
     text-align: center;
-    font-size:50px
+    font-size:50px;
+    animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     
 }
 
@@ -49,6 +52,11 @@ span{
 svg{
     justify-content: center;
     align-items: center;
+    color: rgb(250, 247, 247);
+    animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
 
 .review-card{
