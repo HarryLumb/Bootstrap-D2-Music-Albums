@@ -4,6 +4,7 @@ body{
     background-color: #252324;
     color:white;
     font-family:  'Poppins', sans-serif;
+    margin:0
     
 }
 
@@ -61,6 +62,14 @@ svg{
     background-color: #252324;
 }
 
+td{
+    color: rgba(255, 255, 255, 0.523);
+}
+
+tr{
+    color: rgba(255, 255, 255, 0.501);
+}
+
 .album-review-img{
    
     border-radius: 10px;
@@ -89,3 +98,183 @@ nav{
 .div.dropdown-menu.show{
     color: white;
 }
+
+.jumbotron {
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    
+    background-image: url("https://www.dk-mba.com/u/images/_f1500/xSpotify-logo.png.pagespeed.ic.rMcHimZ03a.png");
+
+    object-fit: cover;
+  }
+
+  .spotify{
+    font-size: 30px;
+  }
+
+
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+    
+@keyframes fadeOut {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+.item {
+    position:relative;
+    padding-top:20px;
+    display:inline-block;
+}
+.notify-badge{
+    position: absolute;
+    top:-14px;
+    left:-5px;
+    background:green;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:5px 10px;
+    font-size:10px;
+    
+    
+}
+
+
+.card{
+    position: relative;
+}
+
+.table{
+    color:black;
+}
+
+.remove{
+    background:red;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:5px 10px;
+    font-size:10px;
+    width:80px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    visibility: hidden;
+    
+}
+
+.add{
+    background:rgba(0, 128, 0, 0.905);
+    width: 100px;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:5px;
+    font-size:15px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+   cursor: pointer;
+    
+   
+      
+}
+.add:hover::after{
+    
+        opacity: 1;
+      
+      
+    }
+
+    
+.add:hover {
+    transform: scale(1.1, 1.2);
+    box-shadow: 3px 3px 20px rgba(255, 255, 255, 0.233);
+    
+  }
+
+  button{
+    border: none;
+    border: none;
+background: none;
+cursor: pointer;
+  }
+  
+  .modal-title{
+    color: black;
+  }
+
+  .hide-button{
+    
+    visibility: hidden;
+  }
+
+  .visible{
+    visibility: visible;
+  }
+
+ 
+   
+ .modal-content{
+    color: black;
+ }
+.review-album-container{
+    padding-bottom: 20px;
+}
+
+tr:hover .remove { 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    visibility: visible;
+    transition: all 1s ease-out;
+
+ }
+ tr:hover::after .remove { 
+ animation: fadeOut ease 3s;
+ animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    visibility: visible;
+ }
+
+ div .row{
+    width: 100%;
+ }
+
+ td{
+    
+    justify-content: center;
+    align-items: center;
+ }
+
+ .album-img{
+    object-fit: cover;
+    border-radius: 10px;
+ }
+ .img-border{
+    border-radius:10px
+ }
+
+
+ /* .border-div{
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.338);
+ } */
+
+ 
+
+
